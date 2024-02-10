@@ -85,6 +85,27 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		exampleVariable2 = 0;
 		exampleVariable3 = 0;
 	}
+	function myfunction()
+	{
+		examplevariable1= parseFloat(document.getElementByld("firstInputBox").value)
+		examplevariable2= parseFloat(document.getElementById("secondInputBox").value)
+		
+		for(let index=0; index<examplevariable1; index++)
+		{
+			var smileyImage= document.createElement("img");
+			smileyImage.src= "https://i.imgur.com/jctdkSS.png";
+			smileyImage.height = 300
+			smileyImage.width = 100
+			document.getElementByld("main_content").appendChild(smileyImage):
+		}
+		for(let index=0; index<examplevariable2; index++)
+		{
+			var frowningImage= document.createElement("img");
+			smileyImage.src= "https://i.imgur.com/UsNPTYo.png";
+			document.getElementByld("main_content").appendChild(frowningImage):
+		}
+		document.getElementById("main_content_p").innerHTML= "You inserted "+ examplevariable1 + " smiley faces and "+ examplevariable2 + " frowny faces!";
+	}
 </script>
   
   
@@ -160,11 +181,26 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
   <a href="#finalpage" onclick="exampleFunction1();" class="w3-btn w3-grey">Button 1</a>
   <a href="#finalpage" onclick="exampleFunction2();" class="w3-btn w3-grey">Button 2</a>
   <a href="#finalpage" onclick="exampleFunction3();" class="w3-btn w3-grey">Button 3</a>
-    
+  <a href="#bomboclaat" onclick="myfunction();" class="w3-btn w3-grey">Button Alternate</a>
   </center>
 </div>  
   
-  
+<!--ALTERNATE SUBPAGE-->
+<div id= "bomboclaat" class= "page">
+	<!--Header.-->
+	<div id= "HEADERRR" class= "w3-container w3-flat-green-sea">
+		<h1>subpage_heading</h1>
+	</div>
+
+	<!--Main content of the page.-->
+	<div id= "main_content" class="w3-container">
+		<p id= "main_content_p">PLACEHOLDER TEXT</p>
+	</div>
+
+	<!--A link that runs a function when clicked and takes the user to a new page.-->
+	<a href= "#bomboclaat" class= "page" onclick= "myfunction();">Button Alternate</a>
+	<a href= "#content" class= "page" onclick= "resetVariables();">Home Page</a>
+</div>
   
 
 	  
