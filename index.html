@@ -87,22 +87,20 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	}
 	function myfunction()
 	{
-		examplevariable1= parseFloat(document.getElementByld("firstInputBox").value)
-		examplevariable2= parseFloat(document.getElementById("secondInputBox").value)
+		examplevariable1= parseFloat(document.getElementByld("firstInputBox").value);
+		examplevariable2= parseFloat(document.getElementById("secondInputBox").value);
 		
-		for(let index=0; index<examplevariable1; index++)
+		for(let index=0; index < examplevariable1; index++)
 		{
 			var smileyImage= document.createElement("img");
 			smileyImage.src= "https://i.imgur.com/jctdkSS.png";
-			smileyImage.height = 300
-			smileyImage.width = 100
-			document.getElementByld("main_content").appendChild(smileyImage):
+			document.getElementByld("main_content").appendChild(smileyImage);
 		}
-		for(let index=0; index<examplevariable2; index++)
+		for(let index2=0; index2 < examplevariable2; index2++)
 		{
 			var frowningImage= document.createElement("img");
-			smileyImage.src= "https://i.imgur.com/UsNPTYo.png";
-			document.getElementByld("main_content").appendChild(frowningImage):
+			frowningImage.src= "https://i.imgur.com/UsNPTYo.png";
+			document.getElementByld("main_content").appendChild(frowningImage);
 		}
 		document.getElementById("main_content_p").innerHTML= "You inserted "+ examplevariable1 + " smiley faces and "+ examplevariable2 + " frowny faces!";
 	}
@@ -196,7 +194,6 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<div id= "main_content" class="w3-container">
 		<p id= "main_content_p">This should be where the smiley/forwning faces pop up</p>
 	</div>
-
 	<!--A link that runs a function when clicked and takes the user to a new page.-->
 	<a href= "#content" class= "page" onclick= "resetVariables();">Home Page</a>
 </div>
