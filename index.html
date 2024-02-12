@@ -35,35 +35,20 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 <!--Javascript code.-->
 <script>
-	var exampleVariable1 = 0;
-	var exampleVariable2 = 0;
-	var exampleVariable3 = 0;
 	
-	function exampleFunction1()
+	function firstFunction()
 	{
 		<img src = "https://i.imgur.com/pRE1c1J.png" alt = "McDonalds">
 	}
 	
-	function exampleFunction2()
+	function secondFunction()
 	{
-		exampleVariable1 = parseFloat(document.getElementById("firstInputBox").value);
-    		exampleVariable2 = parseFloat(document.getElementById("secondInputBox").value);
 		
-		exampleVariable3 = exampleVariable1 * exampleVariable2;
-		
-		alert("You just ran a multiplication function!");
-		console.log("Multiplication function was run.");
 	}
 	
-	function exampleFunction3()
+	function thirdFunction()
 	{
-		exampleVariable1 = parseFloat(document.getElementById("firstInputBox").value);
-    		exampleVariable2 = parseFloat(document.getElementById("secondInputBox").value);
 		
-		exampleVariable3 = exampleVariable1 ** exampleVariable2;
-		
-		alert("You just ran an exponent function!");
-		console.log("Exponent function was run.");
 	}
 	
 	function exampleResultsFunction()
@@ -72,31 +57,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		resetVariables();
 	}
 	
-	function resetVariables()
-	{
-		exampleVariable1 = 0;
-		exampleVariable2 = 0;
-		exampleVariable3 = 0;
-	}
-	function myfunction()
-	{
-		examplevariable1= parseFloat(document.getElementByld("firstInputBox").value);
-		examplevariable2= parseFloat(document.getElementById("secondInputBox").value);
-		
-		for(let index=0; index < examplevariable1; index++)
-		{
-			var smileyImage= document.createElement("img");
-			smileyImage.src= "https://i.imgur.com/jctdkSS.png";
-			document.getElementByld("main_content").appendChild(smileyImage);
-		}
-		for(let index2=0; index2 < examplevariable2; index2++)
-		{
-			var frowningImage= document.createElement("img");
-			frowningImage.src= "https://i.imgur.com/UsNPTYo.png";
-			document.getElementByld("main_content").appendChild(frowningImage);
-		}
-		document.getElementById("main_content_p").innerHTML= "You inserted "+ examplevariable1 + " smiley faces and "+ examplevariable2 + " frowny faces!";
-	}
+
 </script>
   
   
@@ -151,14 +112,14 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
   <center>
       
-  <a href="#two" onclick="exampleFunction1();" class="w3-btn w3-grey">McDonalds</a>
+  <a href="#two" class="w3-btn w3-grey">McDonalds</a>
   <a href="#three" onclick="exampleFunction2();" class="w3-btn w3-grey">Button 2</a>
   <a href="#four" onclick="exampleFunction3();" class="w3-btn w3-grey">Button 3</a>
   <a href="#finalpage" onclick="myfunction();" class="w3-btn w3-grey">Button 4</a>
   </center>
 </div>  
   
-<!--ALTERNATE SUBPAGE-->
+<!--SECOND SUBPAGE-->
 <div id= "two" class= "page">
 	<!--Header.-->
 	<div id= "HEADER" class= "w3-container w3-flat-green-sea">
@@ -170,9 +131,47 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		<p id= "main_content_p">Strange choice for your favorite- it's not that good and lowkey makes me feel disgusting. McDonald's app can't be beat though, free food always tastes better</p>
 	</div>
 	<!--A link that runs a function when clicked and takes the user to a new page.-->
-	<a href= "#content" class= "page" onclick= "resetVariables();">Home Page</a>
+	<a href="#content" class="w3-btn w3-black">Return to Home Page</a>
 </div>
-  
+
+<!--THIRD SUBPAGE-->
+<div id= "three" class= "page">
+	<!--Header-->
+	<div id= "HEADER2" class = "w3-container w3-flat-sunflower">
+		<h1>Burger King?</h1>
+	</div>
+	<!--Main content of the page.-->
+	<div id= "main_content2" class= "w3-container">
+		<p id= "main_content_p2">Youre nasty. P U Whopper boy</p>
+	</div>
+
+	<a href="#content" class="w3-btn w3-black">Return to Home Page</a>
+	
+<!--FOURTH SUBPAGE-->
+<div id= "four" class+"page">
+
+	<div id= "HEADER3" class = "w3-container w3-flat-alizarin">
+		<h1>In N Out?</h1>
+	</div>
+
+	<div id= "main_content3" class= "w3-container">
+		<p id= "main_content_p3">I hate In N Out Because one time I had their fries and they tasted like fish. ew. Just gotta add my two cents</p>
+	</div>
+
+	<a href="#content" class="w3-btn w3-black">Return to Home Page</a>
+
+<!--FIFTH SUBPAGE-->
+<div id= "five" class= "page"
+
+	<div id= "HEADER4" class = "w3-container w3-flat-clouds">
+		<h1>Chick Fil A</h1>
+	</div>
+
+	<div id= "main-content4" class= "w3-container">
+		<p id= "main_content_p4">I could eatthe 12 count nugget meal with mac and cheese instead of fries with Chick Fil A sauce and lemonade every day for the rest of my life. Its really nothing crazy but it feels healthier than most fast food restaurants and always hits</p>
+	</div>
+
+	<a href="#content" class="w3-btn w3-black">Return to Home Page</a>
 
 	  
 	  
