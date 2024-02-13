@@ -38,6 +38,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	function twoFunction()
 	{
+		var selectedValue2= document.getElementById("menuchoice2").value;
+		document.getElementById("main_content_p").textContent = selectedValue2 + "? Dope, me too. You can go home now."
 		
 	}
 	
@@ -139,8 +141,10 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 			<option value= "Burger">Burger</option>
 			<option value= "McFlurry">McFlurry</option>
 		</select>
+		
 	</div>
 	<!--A link that runs a function when clicked and takes the user to a new page.-->
+	<a href="#finalpage" onclick="twoFunction()"class= "w3-btn w3-black">CLICK TO SUBMIT ANSWER</a>
 	<a href="#content" class="w3-btn w3-black">Return to Home Page</a>
 </div>
 
@@ -204,13 +208,13 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 <!--LAST SUBPAGE-->
 <div id="finalpage" class="page">
 	<div id="finalheader" class="w3-container w3-flat-carrot">
-		<h1>FINAL PAGE TITLE GOES HERE</h1>
+		<h1>THANK YOU FOR TALKING</h1>
 	</div>
 	
   <center>
     
 	  <div id="finalcontent" class="w3-container">
-		  <p id="endResults">FINAL PAGE CONTENT GOES HERE</p>
+		  <p id="endResults">interesting game, right?</p>
 	  </div>
   
   <a class="w3-btn w3-black" onclick="exampleResultsFunction();">Click me!
